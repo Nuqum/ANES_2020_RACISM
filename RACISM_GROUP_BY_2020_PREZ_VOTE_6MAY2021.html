@@ -1,0 +1,664 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>PSPP Output</TITLE>
+<META NAME="generator" CONTENT="GNU pspp 1.2.0">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<STYLE TYPE="text/css">
+<!--
+body {
+  background: white;
+  color: black;
+  padding: 0em 12em 0em 3em;
+  margin: 0
+}
+body>p {
+  margin: 0pt 0pt 0pt 0em
+}
+body>p + p {
+  text-indent: 1.5em;
+}
+h1 {
+  font-size: 150%;
+  margin-left: -1.33em
+}
+h2 {
+  font-size: 125%;
+  font-weight: bold;
+  margin-left: -.8em
+}
+h3 {
+  font-size: 100%;
+  font-weight: bold;
+  margin-left: -.5em }
+h4 {
+  font-size: 100%;
+  margin-left: 0em
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  color: blue
+}
+html {
+  margin: 0
+}
+code {
+  font-family: sans-serif
+}
+table {
+  border-collapse: collapse;
+  margin-bottom: 1em
+}
+th { background: #dddddd; font-weight: normal; font-style: oblique }
+caption {
+  text-align: left
+}
+-->
+</STYLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff" TEXT="#000000"
+ LINK="#1f00ff" ALINK="#ff0000" VLINK="#9900dd">
+<DIV class="GET"><H3>GET</H3>
+<PRE class="syntax">GET FILE=&quot;/home/pi/Desktop/NuQum/ANES_2020/DATA/anes_timeseries_2020_spss_20210324.sav&quot;.<BR></PRE>
+<DIV class="FILTER"><H3>FILTER</H3>
+<PRE class="syntax">FILTER BY ANALYTIC_SAMPLE.<BR></PRE>
+<DIV class="CROSSTABS"><H3>CROSSTABS</H3>
+<PRE class="syntax">CROSSTABS <BR>	/TABLES= RACISM_GROUP	BY	 PRES_VOTE_2020<BR>	/FORMAT=AVALUE TABLES PIVOT<BR>	/CELLS=COUNT COLUMN.<BR></PRE>
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>Summary.</CAPTION>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"></TH>
+    <TH ALIGN="CENTER" COLSPAN="6" STYLE="border-top: double; border-left: double; border-right: double">Cases</TH>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH ALIGN="CENTER" COLSPAN="2" STYLE="border-top: thin solid; border-left: double">Valid</TH>
+    <TH ALIGN="CENTER" COLSPAN="2" STYLE="border-top: thin solid; border-left: thin solid">Missing</TH>
+    <TH ALIGN="CENTER" COLSPAN="2" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">Total</TH>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">N</TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">Percent</TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">N</TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">Percent</TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">N</TH>
+    <TH ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">Percent</TH>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-bottom: double; border-left: double">Racism Group * Presidential Vote in 2020</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-bottom: double; border-left: double">7453.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-bottom: double; border-left: thin solid">100.0%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-bottom: double; border-left: thin solid">.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-bottom: double; border-left: thin solid">0.0%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-bottom: double; border-left: thin solid">7453.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-bottom: double; border-left: thin solid; border-right: double">100.0%</TD>
+  </TR>
+</TBODY></TABLE>
+
+<TABLE><TBODY VALIGN="TOP">
+  <CAPTION>Racism Group * Presidential Vote in 2020 [count, column %].</CAPTION>
+  <TR>
+    <TH STYLE="border-top: double; border-left: double"></TH>
+    <TH ALIGN="CENTER" COLSPAN="4" STYLE="border-top: double; border-left: double"><EM>Presidential Vote in 2020</EM></TH>
+    <TH STYLE="border-top: double; border-left: thin solid; border-right: double"></TH>
+  </TR>
+  <TR>
+    <TH ALIGN="RIGHT" STYLE="border-left: double"><EM>Racism Group</EM></TH>
+    <TH STYLE="border-top: thin solid; border-left: double">Biden</TH>
+    <TH STYLE="border-top: thin solid; border-left: thin solid">Trump</TH>
+    <TH STYLE="border-top: thin solid; border-left: thin solid">Other</TH>
+    <TH STYLE="border-top: thin solid; border-left: thin solid">Did not vote</TH>
+    <TH ALIGN="CENTER" STYLE="border-left: thin solid; border-right: double">Total</TH>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Unclassifiable</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">463.48</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">333.68</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">56.01</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">298.44</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">1151.61</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">14.75%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">14.27%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">26.49%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">16.94%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">15.45%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">White Non Racist</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">1320.58</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">1111.05</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">83.09</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">570.21</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">3084.94</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">42.03%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">47.53%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">39.29%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">32.36%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">41.39%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">White Racist Towards Blacks Only</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">36.09</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">88.81</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">2.23</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">30.98</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">158.12</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">1.15%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">3.80%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">1.06%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">1.76%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">2.12%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">White Racist Towards Hispanics Only</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">29.81</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">34.26</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">2.78</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">14.50</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">81.35</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">.95%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">1.47%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">1.31%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.82%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">1.09%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">White Racist Towards Asians Only</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">43.93</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">49.22</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">4.11</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">29.99</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">127.25</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">1.40%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">2.11%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">1.94%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">1.70%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">1.71%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">White Racist Towards Blacks and Hispanics</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">33.60</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">52.64</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">3.11</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">21.02</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">110.37</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">1.07%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">2.25%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">1.47%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">1.19%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">1.48%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">White Racist Towards Blacks and Asians</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">16.68</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">37.35</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.73</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">19.60</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">74.36</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">.53%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">1.60%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.35%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">1.11%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">1.00%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">White Racist Towards Hispanics and Asians</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">30.20</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">56.23</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">1.88</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">28.90</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">117.22</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">.96%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">2.41%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.89%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">1.64%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">1.57%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">White Racist Towards Blacks, Hispanics and Asians</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">139.26</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">361.77</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">8.86</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">122.46</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">632.35</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">4.43%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">15.48%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">4.19%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">6.95%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">8.48%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Black Non Racist</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">117.90</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">19.58</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">6.23</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">69.07</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">212.77</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">3.75%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.84%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">2.94%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">3.92%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">2.85%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Black Racist Towards Whites Only</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">46.45</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">5.18</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">15.57</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">67.21</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">1.48%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">2.45%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.88%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">.90%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Black Racist Towards Hispanics Only</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">5.41</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.51</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">2.70</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">8.62</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">.17%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.02%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.15%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">.12%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Black Racist Towards Asians Only</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">10.44</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">4.71</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">1.22</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.69</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">17.06</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">.33%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.20%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.58%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.04%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">.23%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Black Racist Towards Whites and Hispanics</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">7.23</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">2.52</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">9.75</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">.23%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.14%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">.13%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Black Racist Towards Whites and Asians</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">30.02</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">1.02</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">23.48</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">54.51</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">.96%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.04%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">1.33%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">.73%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Black Racist Towards Hispanics and Asians</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">21.05</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">16.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">37.05</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">.67%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.91%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">.50%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Black Racist Towards Whites, Hispanics and Asians</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">221.57</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">15.54</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">10.43</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">96.13</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">343.66</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">7.05%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.66%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">4.93%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">5.46%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">4.61%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Hispanic Non Racist</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">150.87</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">61.10</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">20.03</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">140.14</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">372.15</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">4.80%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">2.61%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">9.47%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">7.95%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">4.99%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Hispanic Racist Towards Whites</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">73.86</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">2.14</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">1.20</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">47.96</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">125.15</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">2.35%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.09%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.57%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">2.72%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">1.68%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Hispanic Racist Towards Blacks</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">18.83</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">16.64</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">7.14</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">42.61</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">.60%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.71%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.41%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">.57%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Hispanic Racist Towards Asians</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">13.40</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">7.88</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">10.49</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">31.77</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">.43%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.34%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.60%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">.43%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Hispanic Racist Towards Whites and Blacks</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">35.83</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">2.88</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">20.55</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">59.25</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">1.14%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.12%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">1.17%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">.80%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Hispanic Racist Towards Whites and Asians</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">24.04</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">5.42</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">14.93</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">44.39</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">.77%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.23%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.85%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">.60%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Hispanic Racist Towards Blacks and Asians</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">16.67</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">2.86</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">12.13</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">31.67</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">.53%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.12%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.69%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">.42%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Hispanic Racist Towards Whites, Blacks and Asians</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">88.15</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">14.44</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">1.09</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">90.63</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">194.31</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">2.81%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.62%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.51%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">5.14%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">2.61%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Asian Non Racist</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">50.31</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">27.81</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.53</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">24.02</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">102.67</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">1.60%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">1.19%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.25%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">1.36%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">1.38%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Asian Racist Towards Whites</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">15.01</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.78</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">1.12</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">3.02</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">19.92</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">.48%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.03%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.53%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.17%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">.27%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Asian Racist Towards Blacks</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">1.79</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.90</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">1.97</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">4.65</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">.06%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.04%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.11%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">.06%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Asian Racist Towards Hispanics</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">.36</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.43</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">.79</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">.01%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.02%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">.01%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Asian Racist Towards Whites and Blacks</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">2.16</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">1.58</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">3.74</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">.07%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.07%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">.05%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Asian Racist Towards Whites and Hispanics</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">5.25</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">2.20</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">7.45</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">.17%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.13%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">.10%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Asian Racist Towards Blacks and Hispanics</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">4.11</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">10.13</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">.00</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">6.87</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">21.11</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">.13%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.43%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.39%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">.28%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Asian Racist Towards Whites, Blacks and Hispanics</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">67.54</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">16.39</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">1.62</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">17.60</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">103.15</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-left: double">2.15%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.70%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">.77%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid">1.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-left: thin solid; border-right: double">1.38%</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-top: thin solid; border-left: double">Total</TH>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: double">3141.86</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">2337.74</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">211.46</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid">1761.93</TD>
+    <TD ALIGN="RIGHT" STYLE="border-top: thin solid; border-left: thin solid; border-right: double">7453.00</TD>
+  </TR>
+  <TR>
+    <TH STYLE="border-bottom: double; border-left: double"></TH>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: double">100.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">100.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">100.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid">100.00%</TD>
+    <TD ALIGN="RIGHT" STYLE="border-bottom: double; border-left: thin solid; border-right: double">100.00%</TD>
+  </TR>
+</TBODY></TABLE>
+
+</BODY>
+</HTML>
+<!-- end of file -->
